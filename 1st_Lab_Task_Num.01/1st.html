@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+
+<head>
+    <style>
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            color: red;
+            font-size: bold;
+        }
+
+        body {
+            background-color: silver;
+        }
+
+        #fname {
+            font-weight: bold;
+        }
+
+        #ster {
+            color: red;
+        }
+
+        #cDrop {
+            width: 250px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h2>Donor Information</h2>
+        <table class="center">
+            <tr>
+                <td>
+                    <label id="fname">First name<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="text"><br>
+                </td>
+            </tr>
+            <td>
+                <label id="fname">Last name<span id="ster">*</span></label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td>
+                <label id="fname">Company</label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td>
+                <label id="fname">Address 1<span id="ster">*</span></label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td>
+                <label id="fname">Address 2</label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td>
+                <label id="fname">City<span id="ster">*</span></label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td>
+                <label id="fname">State<span id="ster">*</span></label>
+            </td>
+            <td>
+                <select name="cars" id="cars">
+                    <option>Select a State</option>
+                    <option>Vuter Goli</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="fname">Zip Code<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="text"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="fname">Country<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <select id="cDrop">
+                        <option>Select a Country </option>
+                        <option>Zambia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="fname">Phone<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="text"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="fname">Donation Amount<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="radio">
+                    <label>None </label>
+                    <input type="radio">
+                    <label>$50</label>
+                    <input type="radio">
+                    <label>$100</label>
+                    <input type="radio">
+                    <label>Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="comment">(Check a button or type in your <br>amount)</span>
+                </td>
+                <td>
+                    <label id="fname"> Other Amount:</label> <input type="text"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="fname">Recuring Donation<br><span id="comment">(Click If Yes)</span></label>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <span id="comment">I am interested in giving regular basis</span>
+                    <br>
+                    <dev> Montly Credit card <input> For <input> Months</dev>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
