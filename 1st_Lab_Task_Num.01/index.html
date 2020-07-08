@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+
+<head>
+    <style>
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            color: red;
+            font-size: bold;
+        }
+
+        body {
+            background-color: silver;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #Chorai_Budhi {
+            color: silver;
+        }
+
+        #fname {
+            font-weight: bold;
+        }
+
+        #ster {
+            color: red;
+        }
+
+        #cDrop {
+            width: 250px;
+        }
+
+        #MC {
+            width: 27px;
+        }
+
+        #hh2 {
+            float: left;
+            width: 50%;
+        }
+
+        #OA {
+            width: 100px;
+        }
+
+        #comment {
+            font-size: 13px;
+        }
+
+        #l {
+            text-align: right;
+        }
+
+        .button1 {
+            background-color: #ddd;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+            position: absolute;
+            left: 40%;
+
+        }
+
+        .button2 {
+            background-color: #ddd;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+            position: absolute;
+            left: 30%;
+
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <p><b> > 1 Donation</b> > 2 Confirmation > 3 Thank You</p>
+        <h2>Donor Information</h2>
+        <table class="center">
+            <tr>
+                <td id="l">
+                    <label id="fname">First name<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="text"><br>
+                </td>
+            </tr>
+            <td id="l">
+                <label id="fname">Last name<span id="ster">*</span></label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td id="l">
+                <label id="fname">Company</label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td id="l">
+                <label id="fname">Address 1<span id="ster">*</span></label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td id="l">
+                <label id="fname">Address 2</label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td id="l">
+                <label id="fname">City<span id="ster">*</span></label>
+            </td>
+            <td>
+                <input type="text"><br>
+            </td>
+            </tr>
+            <td id="l">
+                <label id="fname">State<span id="ster">*</span></label>
+            </td>
+            <td>
+                <select name="cars" id="cars">
+                    <option>Select a State</option>
+                    <option>Vuter Goli</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td id="l">
+                    <label id="fname">Zip Code<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="text"><br>
+                </td>
+            </tr>
+            <tr>
+                <td id="l">
+                    <label id="fname">Country<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <select id="cDrop">
+                        <option>Select a Country </option>
+                        <option>Zambia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td id="l">
+                    <label id="fname">Phone<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="text"><br>
+                </td>
+            </tr>
+            <tr>
+                <td id="l">
+                    <label id="fname">Donation Amount<span id="ster">*</span></label>
+                </td>
+                <td>
+                    <input type="radio">
+                    <label id="comment">None </label>
+                    <input type="radio">
+                    <label id="comment">$50</label>
+                    <input type="radio">
+                    <label id="comment">$100</label>
+                    <input type="radio">
+                    <label id="comment">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td id="l">
+                    <span id="comment">(Check a button or type in your <br>amount)</span>
+                </td>
+                <td>
+                    <label id="fname"> Other Amount:</label> <input type="text" id="OA"><br>
+                </td>
+            </tr>
+            <tr>
+                <td id="l">
+                    <label id="fname">Recuring Donation</label><br><span id="comment">(Click If Yes)</span>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <span id="comment">I am interested in giving regular basis</span>
+                    <br>
+                    <dev id="comment"> Montly Credit card <input id="MC"> For <input id="MC"> Months</dev>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <form>
+            <h2>Honorarium and Memorial Donation Information</h2>
+            <table class="center">
+                <tr>
+                    <td id="l">
+                        <label id="fname">I would like to make this <br>Donation</label>
+                    </td>
+
+                    <td>
+                        <input type="radio">
+                        <label>To Honor </label><br>
+                        <input type="radio">
+                        <label>In Memory of</label>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">Name</label>
+                    </td>
+                    <td>
+                        <input type="text"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">Acknowledge Donation to</label>
+                    </td>
+                    <td>
+                        <input type="text"><span id="Chorai_Budhi">-----------------</span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">Address</label>
+                    </td>
+                    <td>
+                        <input type="text"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">City</label>
+                    </td>
+                    <td>
+                        <input type="text"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">State</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Select a State </option>
+                            <option>Zambia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">Zip</label>
+                    </td>
+                    <td>
+                        <input type="text"><br>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <h2>Additional Information</h2>
+            <p id="comment">Please enter your name,company, or orgnization as you would like to apperar in our
+                publications:</p>
+
+            <table class="center">
+                <tr>
+                    <td id="l">
+                        <span id="Chorai_Budhi">--------------</span> <label id="fname">Name</label>
+                    </td>
+                    <td>
+                        <input type="text"><br>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <input type="checkbox">
+                <span id="comment">I would like my figt to remain anonymous.</span>
+                <br>
+                <input type="checkbox">
+                <span id="comment">My employer offers a matching gift.</span>
+                <br>
+                <input type="checkbox">
+                <span id="comment">Please save the cost of acknwledging this gift by not mailling a thank you
+                    letter.</span>
+                <br>
+            </p>
+
+            <table class="center">
+                <tr>
+                    <td id="l">
+                        <label id="fname">Comment<br></label><span id="comment">(Please type any question or feedback
+                            <br>here)</span>
+                    </td>
+                    <td>
+                        <textarea rows="4" cols="35" name="comment" form="usrform">
+                        </textarea>
+                        <span id="Chorai_Budhi">--</span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="l">
+                        <label id="fname">How many we contact you?</label>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                        <span id="comment">Email</span><br>
+                        <input type="checkbox">
+                        <span id="comment">Postal Mail</span><br>
+                        <input type="checkbox">
+                        <span id="comment">Fax</span><br>
+                    </td>
+                </tr>
+            </table>
+            <p> I would like to recive newletters and infomation</p>
+            <table class="center">
+
+                <tr>
+                    <td id="l">
+                        <span id="Chorai_Budhi">-------</span>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                        <span id="comment">Email</span><br>
+                        <input type="checkbox">
+                        <span id="comment">Postal Mail</span><br>
+                        <input type="checkbox">
+                        <span id="comment">Fax</span><br>
+                    </td>
+                </tr>
+            </table>
+            <input type="checkbox">
+            <span id="comment">I would like information about volumateering with the.</span>
+            <br>
+        </form>
+        <button class="button1">Reset</button>
+        <button class="button2">Continue</button>
+        <br>
+        <br>
+        <div><img src="i.png" height="15px">
+            Donate online with confidence.You are one a secure server.
+        </div>
+
+</body>
+
+</html>
