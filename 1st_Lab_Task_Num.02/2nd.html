@@ -12,30 +12,95 @@
         body {
             background-color: #8C2626;
             color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #main {
+            text-align: center;
+            font-size: 50px
+        }
+
+        #GName {
+            color: #DDB477;
+        }
+
+        #Jump {
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        #option {
+            color: #89ECE6;
+            font-size: 20px;
+        }
+
+        #Summary,
+        #Legends,
+        #Maps {
+            color: #89ECE6;
+        }
+
+        #LLink {
+            color: #8883DE;
         }
     </style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/embed-images/apex-embed-about-legends.png"
         width="100%">
-    <h2>This Site is About My Favrote Game <br>
-        <spam>Apex Legends</spam>
-    </h2>
-
-
-
-    <h1>Summary</h1>
-    <p>
-        Apex Legends is a free-to-play battle royale game developed by <span>Entertainment and published by Electronic
-            Arts.</span>
-        ... In Apex Legends, up to 20 three-person squads land on an island and search for weapons and supplies before
-        attempting to defeat all other players in combat.
+    <p id="main">This Site is About My Favrote Game <br>
+        <spam id="GName"><b>Apex Legends</b></spam>
     </p>
-    <h1>Legends</h1>
-    <p>Currently there are 13 Legends and it 5th seasons ranning</p>
-    <p>Some Information about Legends</p>
+
+    <div id="Jump"><label>-Jump To-</label><br>
+        <a href="#Summary" id="option">Summary</a>
+        <label>|</label>
+        <a href="#Legends" id="option">Legends</a>
+        <label>|</label>
+        <a href="#Maps" id="option">Maps</a>
+    </div>
+
+    <h1 id="Summary">Summary</h1>
+    <p>
+        Apex Legends is a free-to-play battle royale game developed by <span style="color: #DDB477;">Entertainment and
+            published by
+            Electronic
+            Arts.</span>
+        ... In Apex Legends, up to 20 three-person squads land on an island and search for weapons and supplies
+        before
+        attempting to defeat all other players in combat.
+        A Nintendo Switch version is planned for release in late 2020, along with cross-platform play between all
+        supported
+        platforms.[1]
+
+        In Apex Legends, up to 20 three-person squads land on an island and search for weapons and supplies before
+        attempting to
+        defeat all other players in combat. The available play area on the island shrinks over time, forcing players to
+        keep
+        moving or else find themselves outside the play area which can be fatal. The final team alive wins the round.
+        The game
+        is set in the same science fiction universe as Respawn Entertainment's Titanfall and Titanfall 2.[2]
+
+        Work on the game began sometime around late 2016 and early 2017, though the project remained a secret right up
+        until its
+        launch. The game's release in 2019 came as a surprise, as until that point it had been assumed that Respawn
+        Entertainment was working on a third installment to the Titanfall franchise, the studio's previous major title.
+
+        Apex Legends received positive reviews from critics, who praised its gameplay, progression system, and fusion of
+        elements from various genres. Some considered it a worthy competitor to Fortnite Battle Royale, a similar game
+        that had
+        gained massive popularity in the previous year. Apex Legends surpassed over 25 million players by the end of its
+        first
+        week, and 50 million within its first month. According to EA, as of July 2019, the game had approximately 8 to
+        10
+        million players a week and by October 2019 it had approximately 70 million players worldwide.
+    </p>
+    <h1 id="Legends">Legends</h1>
+    <p>Currently there are 13 Legends and it 5th seasons running.</p>
+    <p>Some Information about Legends:</p>
     <table>
         <tr>
             <th>Picture</th>
@@ -57,7 +122,8 @@
             <th>Gridiron</th>
             <th>Smoke Launcher</th>
             <th>Rolling Thunder</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/bangalore">Link</a></th>
+            <th id="LLink"><a href="https://www.ea.com/games/apex-legends/about/characters/bangalore"
+                    id="LLink">Link</a></th>
         </tr>
         <tr>
             <th><img class="eapl-tile__image" alt=" "
@@ -70,7 +136,7 @@
             <th>Psamathe</th>
             <th>Stim</th>
             <th>Launch Pad</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/octane">Link</a></th>
+            <th><a href="https://www.ea.com/games/apex-legends/about/characters/octane" id="LLink">Link</a></th>
         </tr>
         <tr>
             <th><img class="eapl-tile__image" alt=" "
@@ -82,7 +148,8 @@
             <th>Solace</th>
             <th>Perimeter Security</th>
             <th>Interception Pylon</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/wattson">Link</a></th>
+            <th id="LLink"><a href="https://www.ea.com/games/apex-legends/about/characters/wattson" id="LLink">Link</a>
+            </th>
         </tr>
         <tr>
             <th><img class="eapl-tile__image" alt=" "
@@ -94,7 +161,8 @@
             <th>Typhon</th>
             <th>Into the Void</th>
             <th>Dimensional Rift</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/wraith">Link</a></th>
+            <th id="LLink"><a href="https://www.ea.com/games/apex-legends/about/characters/wraith" id="LLink">Link</a>
+            </th>
         </tr>
         <tr>
             <th><img class="eapl-tile__image" alt=" "
@@ -104,10 +172,10 @@
             <th>CRYPTO</th>
             <th>[ERROR]</th>
             <th>[ERROR]</th>
-            <th>[ERROR]</th>
             <th>Surveillance Drone</th>
             <th>Drone EMP</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/crypto">Link</a></th>
+            <th id="LLink"><a href="https://www.ea.com/games/apex-legends/about/characters/crypto" id="LLink">Link</a>
+            </th>
         </tr>
         <tr>
             <th><img class="eapl-tile__image" alt=" "
@@ -120,7 +188,8 @@
             <th>He’s trying to find out!</th>
             <th>Grappling Hook</th>
             <th>Zipline Gun</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/pathfinder">Link</a></th>
+            <th id="LLink"><a href="https://www.ea.com/games/apex-legends/about/characters/pathfinder"
+                    id="LLink">Link</a></th>
         </tr>
         <tr>
             <th><img class="eapl-tile__image" alt=" "
@@ -132,11 +201,12 @@
             <th>Gaea</th>
             <th>Nox Gas Trap</th>
             <th>Nox Gas Grenade</th>
-            <th><a href="https://www.ea.com/games/apex-legends/about/characters/caustic">Link</a></th>
+            <th id="LLink"><a href="https://www.ea.com/games/apex-legends/about/characters/caustic" id="LLink">Link</a>
+            </th>
         </tr>
     </table>
 
-    <h1>Maps</h1>
+    <h1 id="Maps">Maps</h1>
     <table>
         <tr>
             <th>Picture</th>
@@ -153,15 +223,20 @@
             <th>
                 <p>Kings Canyon is a map for Apex Legends located in the planet Solace.
 
-                    It features an abundance of areas varying from military facilities to slums, with a river dividing
+                    It features an abundance of areas varying from military facilities to slums, with a river
+                    dividing
                     it down the middle.
-                    It is an island filled with Creatures, and surrounded by water on all sides, with hazardous cliffs
+                    It is an island filled with Creatures, and surrounded by water on all sides, with hazardous
+                    cliffs
                     that drop to the sea
                     level below.
 
-                    Different versions of the map have been reused multiple times during its absence from the permanent
+                    Different versions of the map have been reused multiple times during its absence from the
+                    permanent
                     playlist. A
-                    night-time version of the map was also made available during the Shadowfall limited-time mode and
+                    night-time version of the map was also made available during the Shadowfall limited-time
+                    mode
+                    and
                     the Grand Soiree
                     Icon.svg Grand Soirée event's Kings Canyon Nighttime game mode.</p>
             </th>
@@ -174,23 +249,38 @@
                     data-file-width="1920" data-file-height="1080"></th>
             <th>World's Edge</th>
             <th>
-                <p>World's Edge is a map introduced in Season 3.svg Season 3 located on the planet Talos.The once
-                    uninhabitable world of Talos became a hotbed of IMC activity when a rare mineral compound was
+                <p>World's Edge is a map introduced in Season 3.svg Season 3 located on the planet Talos.The
+                    once
+                    uninhabitable world of Talos became a hotbed of IMC activity when a rare mineral compound
+                    was
                     discovered
-                    beneath its surface. Heat-reducing towers were built to super-cool its natural lava flows, and the
+                    beneath its surface. Heat-reducing towers were built to super-cool its natural lava flows,
+                    and
+                    the
                     town of World’s Edge
-                    grew around them. Decades ago, an explosion in one of the towers covered the surrounding area in a
+                    grew around them. Decades ago, an explosion in one of the towers covered the surrounding
+                    area in
+                    a
                     lethal flash freeze.
                     Today, World’s Edge is deserted, its borders inhabited by a small community of hunters who
                     reportedly spurn modern
                     technology.
 
-                    After the Repulsor attack on King's Canyon and the various attempts to rebuild it proved too much
+                    After the Repulsor attack on King's Canyon and the various attempts to rebuild it proved too
+                    much
                     trouble than they were
                     worth, the games were moved to World's Edge.</p>
             </th>
         </tr>
     </table>
+
+    <br>
+    <br>
+    <p style="text-align: center;
+            font-size: 21px;
+">For More Information Visit there <a href="https://www.ea.com/games/apex-legends" style="color:#DDB477;">Official
+            Site</a>
+    </p>
 </body>
 
 </html>
