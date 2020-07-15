@@ -102,6 +102,7 @@
         <select name="BloodG" id="bGroup">
             <option name="A+">A+</option>
             <option name="B+">B+</option>
+            <option name="C+">C+</option>
         </select>
         <span class="error">* <?php echo $bGroup; ?></span>
         <br><br>
