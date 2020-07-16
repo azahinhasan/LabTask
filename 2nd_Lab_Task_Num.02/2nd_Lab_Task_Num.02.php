@@ -40,30 +40,32 @@
                 $emailErr = "Invalid email format";
             }
         }
-        if (empty($_POST["dd"]) || empty($_POST["mm"]) || empty($_POST["yy"])) {
+        if (empty($_POST["dd"]) && empty($_POST["mm"]) && empty($_POST["yy"])) {
             $dBirth = "Date Of  Birth is Empty";
         } else {
             $dd = test_input($_POST["dd"]);
             $mm = test_input($_POST["mm"]);
             $yy = test_input($_POST["yy"]);
-            if (!preg_match("/^[1-31]*$/", $dd)) {
-                $dBirth = "Only this format (dd: 1-31, mm: 1-12, yyyy:1953-1998) allowed";
-            } else if (!preg_match("/^[1-12]*$/", $mm)) {
-                $dBirth = "Only this format (dd: 1-31, mm: 1-12, yyyy:1953-1998) allowed";
-            } else if ($yy >= 1953) {
-                if ($yy < 1998) {
-                    $dBirth = $yy;
-                }
+            if ($dd < 1 || $dd > 31) {
+                $dBirth = "Only this format (dd: 1-31) allowed";
+            } else if ($mm < 1 || $mm > 12) {
+                $dBirth = "Only this format (mm: 1-12) allowed";
+            } else if ($yy < 1953) {
+                $dBirth = "Only this format (yyyy:1953-1998) allowed";
+            } else if ($yy > 1998) {
+                $dBirth = "Only this format (yyyy:1953-1998) allowed";
             }
         }
         if (empty($_POST["female"]) && empty($_POST["male"]) && empty($_POST["other"])) {
             $Gender = "At Last One Gender is required";
         }
-        if (empty($_POST["class1"]) && empty($_POST["class2"]) && empty($_POST["class3"])) {
-            $Degree = "At Last One Degree is required";
+        if (empty($_POST["class1"]) && empty($_POST["class2"]) || empty($_POST["class2"]) && empty($_POST["class3"]) || empty($_POST["class1"]) && empty($_POST["class3"])) {
+            $Degree = "At Last Two Degree is required";
         }
-        if (empty($_POST["BloodG"])) {
+        if (empty($_POST["BloodG"]) || $_POST["BloodG"] == 'Group') {
             $bGroup = "At Last One BloodG is required";
+        } else {
+            $group = test_input($_POST["BloodG"]);
         }
     }
 
@@ -80,7 +82,7 @@
         Name: <input type="text" name="name" value=<?php echo $name ?>>
         <span class="error">* <?php echo $nameErr; ?></span>
         <br><br>
-        Email: <input type="text" name="email" value=<?php echo $email ?>>
+        Email: <input type="text" name="email" value=<?php echo $email ?>><b> i</b>
         <span class="error">* <?php echo $emailErr; ?></span>
         <br><br>
         Date of Birth: <input type="text" name="dd" id="date" value=<?php echo $dd ?>> / <input type="text" name="mm" id="date" value=<?php echo $mm ?>> /<input type="text" name="yy" id="date" value=<?php echo $yy ?>>
@@ -100,9 +102,9 @@
         <br><br>
         Blood Group:
         <select name="BloodG" id="bGroup">
-            <option name="A+">A+</option>
-            <option name="B+">B+</option>
-            <option name="C+">C+</option>
+            <option name="">Group</option>
+            <option name="B+" <?php if ($group == 'B+') { ?>selected="true" <?php }; ?>>B+</option>
+            <option name="A+" <?php if ($group == 'A+') { ?>selected="true" <?php }; ?>>A+</option>
         </select>
         <span class="error">* <?php echo $bGroup; ?></span>
         <br><br>
