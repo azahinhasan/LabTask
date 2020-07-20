@@ -39,7 +39,7 @@
             $password = test_input($_POST["password"]);
             if (strlen($_POST["password"]) > 8) {
                 $passErr = "Must Contain less then 8 characters";
-            } elseif (!preg_match("/[@#$%]*$/", $password)) {
+            } elseif (!preg_match("/[@#$%]/", $password)) {
                 $passErr = "Password must contain at least one of the special characters (@, #, $,%)";
             }
         }
